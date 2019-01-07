@@ -229,7 +229,7 @@ class PlgSystemKickGdpr extends JPlugin
 			$js[] = '    "expiryDays": ' . (int) $expiryDays;
 			$js[] = '  },';
 			$js[] = '  "elements": {';
-			$js[] = '    "messagelink": \'<span id="cookieconsent:desc" class="cc-message">{{message}} <a aria-label="learn more about cookies" role=button tabindex="0" class="cc-link" href="' . JText::_($href) . '" target="' . $target . '">{{link}}</a></span>\'';
+			$js[] = '    "messagelink": "<span id=\"cookieconsent:desc\" class=\"cc-message\">{{message}} <a aria-label=\"learn more about cookies\" role=\"button\" tabindex=\"0\" class=\"cc-link\" href=\"' . JText::_($href) . '\" target=\"' . $target . '\">{{link}}</a></span>"';
 			$js[] = '  },';
 			$js[] = '  onInitialise: function (status) {';
 			$js[] = '    handleCookies(status);';
