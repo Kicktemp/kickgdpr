@@ -24,7 +24,7 @@ No rocket science required - just install it using the normal Joomla installer.
 2019 Kicktemp UG (haftungsbeschraenkt)
 
 ### Licence
-GNU GENERAL PUBLIC LICENSE V3. Please see [License File](LICENSE) for more information.
+GNU GENERAL PUBLIC LICENSE V3. Please see [License File](LICENSE.txt) for more information.
 
 ### Feel free to support the Project
 Buy us a Beer by [paypal.me/kicktemp](https://www.paypal.me/kicktemp/)
