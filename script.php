@@ -3,8 +3,9 @@
  * @package     Joomla.Plugin
  * @subpackage  System.kickgdpr
  * @author      Niels Nübel <niels@kicktemp.com>
- * @copyright   2018 Kicktemp UG (haftungsbeschraenkt)
- * @license     GNU/GPLv3 <http://www.gnu.org/licenses/gpl-3.0.de.html>
+ * @author      Stefan Wendhausen <stefan@kicktemp.com>
+ * @copyright   Copyright © 2019 Kicktemp UG (haftungsbeschränkt). All rights reserved.
+ * @license     GNU General Public License version 3 or later; see LICENSE.txt
  * @link        https://kicktemp.com
  */
 
