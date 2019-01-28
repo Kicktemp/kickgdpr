@@ -1,0 +1,26 @@
+/**
+ * Changelog
+ *
+ * @package     Joomla.Plugin
+ * @subpackage  System.kickgdpr
+ * @author      Niels Nübel <niels@kicktemp.com>
+ * @author      Stefan Wendhausen <stefan@kicktemp.com>
+ * @copyright   Copyright © 2019 Kicktemp UG (haftungsbeschränkt). All rights reserved.
+ * @license     GNU General Public License version 3 or later; see LICENSE.txt
+ * @link        https://kicktemp.com
+ */
+
+/**
+ * + Addition
+ * ! Removal
+ * ^ Change
+ * # Fix
+ */
+
+25-Jan-2019 : v2.5.0
+ + Add Changelog-Feature
+ ^ Update cookieconsent.min.css and cookieconsent.min.js to v3.1.0
+ # code styling, author, license link, year
+
+17-Jul-2018 : v2.4.0
+ ^ This is the first version under the newly founded company Kicktemp UG (limited liability). In this step, we just moved the repository from https://github.com/nielsnuebel/kickgdpr to https://github.com/kicktemp/kickgdpr.
