@@ -3,8 +3,9 @@
  * @package     Joomla.Plugin
  * @subpackage  System.kickgdpr
  * @author      Niels Nübel <niels@kicktemp.com>
- * @copyright   2018 Kicktemp UG (haftungsbeschraenkt)
- * @license     GNU/GPLv3 <http://www.gnu.org/licenses/gpl-3.0.de.html>
+ * @author      Stefan Wendhausen <stefan@kicktemp.com>
+ * @copyright   Copyright © 2019 Kicktemp UG (haftungsbeschränkt). All rights reserved.
+ * @license     GNU General Public License version 3 or later; see LICENSE.txt
  * @link        https://kicktemp.com
  */
 
@@ -131,8 +132,8 @@ class PlgSystemKickGdpr extends JPlugin
 
 			if ($js_css_source === 'cloudflare')
 			{
-				$jssrc = '//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.6/cookieconsent.min.js';
-				$csssrc = '//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.6/cookieconsent.min.css';
+				$jssrc = '//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js';
+				$csssrc = '//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css';
 			}
 
 			if ($js_css_source === 'cloudflare' || $js_css_source === 'default')
@@ -229,7 +230,7 @@ class PlgSystemKickGdpr extends JPlugin
 			$js[] = '    "expiryDays": ' . (int) $expiryDays;
 			$js[] = '  },';
 			$js[] = '  "elements": {';
-			$js[] = '    "messagelink": \'<span id="cookieconsent:desc" class="cc-message">{{message}} <a aria-label="learn more about cookies" role=button tabindex="0" class="cc-link" href="' . JText::_($href) . '" target="' . $target . '">{{link}}</a></span>\'';
+			$js[] = '    "messagelink": "<span id=\"cookieconsent:desc\" class=\"cc-message\">{{message}} <a aria-label=\"learn more about cookies\" role=\"button\" tabindex=\"0\" class=\"cc-link\" href=\"' . JText::_($href) . '\" target=\"' . $target . '\">{{link}}</a></span>"';
 			$js[] = '  },';
 			$js[] = '  onInitialise: function (status) {';
 			$js[] = '    handleCookies(status);';
