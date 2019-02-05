@@ -17,6 +17,9 @@
  * # Fix
  */
 
+05-Feb-2019 : v2.5.1
+ + Add Standard Events to Facebook-Pixel Tab
+
 25-Jan-2019 : v2.5.0
  + Add Changelog-Feature
  ^ Update cookieconsent.min.css and cookieconsent.min.js to v3.1.0

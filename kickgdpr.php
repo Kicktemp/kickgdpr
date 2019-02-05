@@ -306,7 +306,38 @@ class PlgSystemKickGdpr extends JPlugin
 				$js[] = "    s.parentNode.insertBefore(t,s)}(window,document,'script',";
 				$js[] = "    'https://connect.facebook.net/en_US/fbevents.js');";
 				$js[] = "    fbq('init', '" . $pixel_id . "');";
-				$js[] = "    fbq('track', 'PageView');";
+                if ($this->params->get('fb_pageview', true))
+                {
+				    $js[] = "    fbq('track', 'PageView');";
+                }
+                if ($this->params->get('fb_viewcontent', false))
+                {
+                    $js[] = "    fbq('track', 'ViewContent');";
+                }
+                if ($this->params->get('fb_search', false))
+                {
+                    $js[] = "    fbq('track', 'Search');";
+                }
+                if ($this->params->get('fb_contact', false))
+                {
+                    $js[] = "    fbq('track', 'Contact');";
+                }
+                if ($this->params->get('fb_lead', false))
+                {
+                    $js[] = "    fbq('track', 'Lead');";
+                }
+                if ($this->params->get('fb_submitapplication', false))
+                {
+                    $js[] = "    fbq('track', 'SubmitApplication');";
+                }
+                if ($this->params->get('fb_schedule', false))
+                {
+                    $js[] = "    fbq('track', 'Schedule');";
+                }
+                if ($this->params->get('fb_findlocation', false))
+                {
+                    $js[] = "    fbq('track', 'FindLocation');";
+                }
 				$js[] = "    // End Facebook Pixel Code";
 				$js[] = "";
 			}

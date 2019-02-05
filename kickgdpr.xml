@@ -2,12 +2,12 @@
 <extension version="3.9" type="plugin" group="system" method="upgrade">
     <name>plg_system_kickgdpr</name>
     <author>Kicktemp UG (haftungsbeschränkt)</author>
-    <creationDate>January 2019</creationDate>
+    <creationDate>February 2019</creationDate>
     <copyright>Copyright © 2019 Kicktemp UG (haftungsbeschränkt). All rights reserved.</copyright>
     <license>GNU General Public License version 3 or later; see LICENSE.txt</license>
     <authorEmail>hello@kicktemp.com</authorEmail>
     <authorUrl>https://kicktemp.com</authorUrl>
-    <version>2.5.0</version>
+    <version>2.5.1</version>
     <description>PLG_SYSTEM_KICKGDPR_XML_DESCRIPTION</description>
     <files>
         <folder>language</folder>
@@ -299,6 +299,91 @@
                        label="PLG_SYSTEM_KICKGDPR_PARAMETER_PIXEL_ID_LABEL"
                        description="PLG_SYSTEM_KICKGDPR_PARAMETER_PIXEL_ID_DESC"
                 />
+                <field
+                        name="fb_pixel_standard_events_spacer"
+                        type="spacer"
+                        label="PLG_SYSTEM_KICKGDPR_TAB_FACEBOOKPIXEL_STANDARD_EVENTS_DESC"
+                />
+                <field name="fb_pageview"
+                       type="radio"
+                       class="btn-group"
+                       default="1"
+                       label="PLG_SYSTEM_KICKGDPR_PARAMETER_PIXEL_PAGEVIEW_LABEL"
+                       description="PLG_SYSTEM_KICKGDPR_PARAMETER_PIXEL_PAGEVIEW_DESC"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="fb_viewcontent"
+                       type="radio"
+                       class="btn-group"
+                       default="0"
+                       label="PLG_SYSTEM_KICKGDPR_PARAMETER_PIXEL_VIEWCONTENT_LABEL"
+                       description="PLG_SYSTEM_KICKGDPR_PARAMETER_PIXEL_VIEWCONTENT_DESC"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="fb_search"
+                       type="radio"
+                       class="btn-group"
+                       default="0"
+                       label="PLG_SYSTEM_KICKGDPR_PARAMETER_PIXEL_SEARCH_LABEL"
+                       description="PLG_SYSTEM_KICKGDPR_PARAMETER_PIXEL_SEARCH_DESC"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="fb_contact"
+                       type="radio"
+                       class="btn-group"
+                       default="0"
+                       label="PLG_SYSTEM_KICKGDPR_PARAMETER_PIXEL_CONTACT_LABEL"
+                       description="PLG_SYSTEM_KICKGDPR_PARAMETER_PIXEL_CONTACT_DESC"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="fb_lead"
+                       type="radio"
+                       class="btn-group"
+                       default="0"
+                       label="PLG_SYSTEM_KICKGDPR_PARAMETER_PIXEL_LEAD_LABEL"
+                       description="PLG_SYSTEM_KICKGDPR_PARAMETER_PIXEL_LEAD_DESC"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="fb_submitapplication"
+                       type="radio"
+                       class="btn-group"
+                       default="0"
+                       label="PLG_SYSTEM_KICKGDPR_PARAMETER_PIXEL_SUBMITAPPLICATION_LABEL"
+                       description="PLG_SYSTEM_KICKGDPR_PARAMETER_PIXEL_SUBMITAPPLICATION_DESC"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="fb_schedule"
+                       type="radio"
+                       class="btn-group"
+                       default="0"
+                       label="PLG_SYSTEM_KICKGDPR_PARAMETER_PIXEL_SCHEDULE_LABEL"
+                       description="PLG_SYSTEM_KICKGDPR_PARAMETER_PIXEL_SCHEDULE_DESC"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="fb_findlocation"
+                       type="radio"
+                       class="btn-group"
+                       default="0"
+                       label="PLG_SYSTEM_KICKGDPR_PARAMETER_PIXEL_FINDLOCATION_LABEL"
+                       description="PLG_SYSTEM_KICKGDPR_PARAMETER_PIXEL_FINDLOCATION_DESC"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
             </fieldset>
             <fieldset name="customcode" label="PLG_SYSTEM_KICKGDPR_TAB_CUSTOMCODE">
                 <field type="kickdonation" name="kickdonation_customcode"/>
