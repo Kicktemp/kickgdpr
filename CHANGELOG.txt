@@ -17,6 +17,9 @@
  * # Fix
  */
 
+28-Feb-2019 : v2.5.3
+ # fix version number
+
 28-Feb-2019 : v2.5.2
  ^ Change from Kicktemp UG (limited liability) to Kicktemp GmbH. Woop woop.
  ^ Update translation for german speaking users
