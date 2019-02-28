@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.9" type="plugin" group="system" method="upgrade">
     <name>plg_system_kickgdpr</name>
-    <author>Kicktemp UG (haftungsbeschränkt)</author>
+    <author>Kicktemp GmbH</author>
     <creationDate>February 2019</creationDate>
-    <copyright>Copyright © 2019 Kicktemp UG (haftungsbeschränkt). All rights reserved.</copyright>
+    <copyright>Copyright © 2019 Kicktemp GmbH. All rights reserved.</copyright>
     <license>GNU General Public License version 3 or later; see LICENSE.txt</license>
     <authorEmail>hello@kicktemp.com</authorEmail>
     <authorUrl>https://kicktemp.com</authorUrl>

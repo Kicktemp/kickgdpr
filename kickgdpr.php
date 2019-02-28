@@ -4,7 +4,7 @@
  * @subpackage  System.kickgdpr
  * @author      Niels Nübel <niels@kicktemp.com>
  * @author      Stefan Wendhausen <stefan@kicktemp.com>
- * @copyright   Copyright © 2019 Kicktemp UG (haftungsbeschränkt). All rights reserved.
+ * @copyright   Copyright © 2019 Kicktemp GmbH. All rights reserved.
  * @license     GNU General Public License version 3 or later; see LICENSE.txt
  * @link        https://kicktemp.com
  */

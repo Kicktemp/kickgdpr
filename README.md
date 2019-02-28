@@ -21,7 +21,7 @@ No rocket science required - just install it using the normal Joomla installer.
 - Stefan Wendhausen @inwend
 
 ### Copyright
-2019 Kicktemp UG (haftungsbeschraenkt)
+2019 Kicktemp GmbH
 
 ### Licence
 GNU GENERAL PUBLIC LICENSE V3. Please see [License File](LICENSE.txt) for more information.
