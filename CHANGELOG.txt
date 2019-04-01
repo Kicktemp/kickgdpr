@@ -17,6 +17,9 @@
  * # Fix
  */
 
+02-Apr-2019 : v2.6.0
+ + Add native Matomo analytics support
+
 28-Feb-2019 : v2.5.3
  # fix version number
 

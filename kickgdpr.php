@@ -77,6 +77,9 @@ class PlgSystemKickGdpr extends JPlugin
 
 		$doc = \JFactory::getDocument();
 		$ga_code = $this->params->get('ga_code', false);
+		$ma_url = $this->params->get('ma_url', false);
+		$ma_siteid = $this->params->get('ma_siteid', false);
+		$ma_domain = $this->params->get('ma_domain', false);
 		$pixel_id = $this->params->get('pixel_id', false);
 
 		if ((!$ga_code && $this->params->get('disable_ga', false)) && (!$pixel_id && $this->params->get('disable_facebook', false)) && $this->params->get('disable_cookie', false))
@@ -292,6 +295,48 @@ class PlgSystemKickGdpr extends JPlugin
 				$js[] = "    // End Google Analytics";
 				$js[] = "";
 			}
+
+            // Add Matomo Analytics to Head
+            if (($ma_url && $ma_domain && $ma_siteid) && !$this->params->get('disable_ma', false))
+            {
+                $js[] = "    // Matomo";
+                $js[] = "    if (!window[disableStr]) {";
+                $js[] = "    var _paq = window._paq || [];";
+                $js[] = "      /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */";
+                if ($this->params->get('ma_setdocumenttitle', true))
+                {
+                    $js[] = "    _paq.push([\"setDocumentTitle\", document.domain + \"/\" + document.title]);";
+                }
+                if ($this->params->get('ma_setdomaincookie', true))
+                {
+                    $js[] = "    _paq.push([\"setCookieDomain\", \"*." . $ma_domain ."\"]);";
+                }
+                if ($this->params->get('ma_setdomains', true))
+                {
+                    $js[] = "    _paq.push([\"setDomains\", [\"*." . $ma_domain ."\"]]);";
+                }
+                if ($this->params->get('ma_clientdonottrack', true))
+                {
+                    $js[] = "    _paq.push([\"setDoNotTrack\", true]);";
+                }
+                if ($this->params->get('ma_disablealltrack', true))
+                {
+                    $js[] = "    _paq.push([\"disableCookies\"]);";
+                }
+                $js[] = "    _paq.push(['trackPageView']);";
+                $js[] = "    _paq.push(['enableLinkTracking']);";
+                $js[] = "    (function() {";
+                $js[] = "        var u=\"//" . $ma_url . "/\";";
+                $js[] = "        _paq.push(['setTrackerUrl', u+'matomo.php']);";
+                $js[] = "        _paq.push(['setSiteId', '" . $ma_siteid . "']);";
+                $js[] = "        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];";
+                $js[] = "        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);";
+                $js[] = "";
+                $js[] = "    })();";
+                $js[] = "    }";
+                $js[] = "    // End Matomo Code";
+                $js[] = "";
+            }
 
 			// Add Facebook Pixel Code to Head
 			if ($pixel_id && !$this->params->get('disable_facebook', false))

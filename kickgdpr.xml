@@ -7,7 +7,7 @@
     <license>GNU General Public License version 3 or later; see LICENSE.txt</license>
     <authorEmail>hello@kicktemp.com</authorEmail>
     <authorUrl>https://kicktemp.com</authorUrl>
-    <version>2.5.3</version>
+    <version>2.6.0</version>
     <description>PLG_SYSTEM_KICKGDPR_XML_DESCRIPTION</description>
     <files>
         <folder>language</folder>
@@ -42,6 +42,16 @@
                        default="0"
                        label="PLG_SYSTEM_KICKGDPR_PARAMETER_DISABLE_GA_LABEL"
                        description="PLG_SYSTEM_KICKGDPR_PARAMETER_DISABLE_GA_DESC"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="disable_ma"
+                       type="radio"
+                       class="btn-group"
+                       default="0"
+                       label="PLG_SYSTEM_KICKGDPR_PARAMETER_DISABLE_MA_LABEL"
+                       description="PLG_SYSTEM_KICKGDPR_PARAMETER_DISABLE_MA_DESC"
                 >
                     <option value="0">JNO</option>
                     <option value="1">JYES</option>
@@ -233,17 +243,6 @@
                        type="radio"
                        class="btn-group"
                        default="0"
-                       label="PLG_SYSTEM_KICKGDPR_PARAMETER_GOOGLEANALYTICS_LABEL"
-                       description="PLG_SYSTEM_KICKGDPR_PARAMETER_GOOGLEANALYTICS_DESC"
-                >
-                    <option value="0">JNO</option>
-                    <option value="1">JYES</option>
-                </field>
-
-                <field name="ga_displayfeatures"
-                       type="radio"
-                       class="btn-group"
-                       default="0"
                        label="PLG_SYSTEM_KICKGDPR_PARAMETER_GA_DISPLAYFEATURES_LABEL"
                        description="PLG_SYSTEM_KICKGDPR_PARAMETER_GA_DISPLAYFEATURES_DESC"
                 >
@@ -279,6 +278,103 @@
                        default="0"
                        label="PLG_SYSTEM_KICKGDPR_PARAMETER_GA_LINKID_LABEL"
                        description="PLG_SYSTEM_KICKGDPR_PARAMETER_GA_LINKID_DESC"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+            </fieldset>
+            <fieldset name="manalytics" label="PLG_SYSTEM_KICKGDPR_TAB_MANALYTICS">
+                <field type="kickdonation" name="kickdonation_manalytics"/>
+                <field
+                        name="ga_spacer"
+                        type="spacer"
+                        label="PLG_SYSTEM_KICKGDPR_TAB_MANALYTICS_DESC"
+                />
+                <!-- MATOMO ANALYTICS CODE-->
+                <field name="ma_url"
+                       class=""
+                       type="text"
+                       default=""
+                       label="PLG_SYSTEM_KICKGDPR_PARAMETER_MANALYTICS_URL_LABEL"
+                       description="PLG_SYSTEM_KICKGDPR_PARAMETER_MANALYTICS_URL_DESC"
+                />
+
+                <field name="ma_siteid"
+                       class=""
+                       type="text"
+                       default=""
+                       label="PLG_SYSTEM_KICKGDPR_PARAMETER_MANALYTICS_SITEID_LABEL"
+                       description="PLG_SYSTEM_KICKGDPR_PARAMETER_MANALYTICS_SITEID_DESC"
+                />
+
+                <field name="ma_domain"
+                       class=""
+                       type="text"
+                       default=""
+                       label="PLG_SYSTEM_KICKGDPR_PARAMETER_MANALYTICS_DOMAIN_LABEL"
+                       description="PLG_SYSTEM_KICKGDPR_PARAMETER_MANALYTICS_DOMAIN_DESC"
+                />
+
+                <field name="ma_setdomaincookie"
+                       type="radio"
+                       class="btn-group"
+                       default="0"
+                       label="PLG_SYSTEM_KICKGDPR_PARAMETER_SC_MANALYTICS_LABEL"
+                       description="PLG_SYSTEM_KICKGDPR_PARAMETER_SC_MANALYTICS_DESC"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field name="ma_setdocumenttitle"
+                       type="radio"
+                       class="btn-group"
+                       default="0"
+                       label="PLG_SYSTEM_KICKGDPR_PARAMETER_SDT_MANALYTICS_LABEL"
+                       description="PLG_SYSTEM_KICKGDPR_PARAMETER_SDT_MANALYTICS_DESC"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field name="ma_setdomains"
+                       type="radio"
+                       class="btn-group"
+                       default="0"
+                       label="PLG_SYSTEM_KICKGDPR_PARAMETER_SD_MANALYTICS_LABEL"
+                       description="PLG_SYSTEM_KICKGDPR_PARAMETER_SD_MANALYTICS_DESC"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field name="ma_tracknoscript"
+                       type="radio"
+                       class="btn-group"
+                       default="0"
+                       label="PLG_SYSTEM_KICKGDPR_PARAMETER_TNS_MANALYTICS_LABEL"
+                       description="PLG_SYSTEM_KICKGDPR_PARAMETER_TNS_MANALYTICS_DESC"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field name="ma_clientdonottrack"
+                       type="radio"
+                       class="btn-group"
+                       default="0"
+                       label="PLG_SYSTEM_KICKGDPR_PARAMETER_CDNT_MANALYTICS_LABEL"
+                       description="PLG_SYSTEM_KICKGDPR_PARAMETER_CDNT_MANALYTICS_DESC"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="ma_disablealltrack"
+                       type="radio"
+                       class="btn-group"
+                       default="0"
+                       label="PLG_SYSTEM_KICKGDPR_PARAMETER_DAT_MANALYTICS_LABEL"
+                       description="PLG_SYSTEM_KICKGDPR_PARAMETER_DAT_MANALYTICS_DESC"
                 >
                     <option value="0">JNO</option>
                     <option value="1">JYES</option>
